@@ -1,0 +1,71 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="Club.MainWindow" Title="Компьютерный клуб"
+        Width="1100" Height="760" MinWidth="870" MinHeight="560"
+        Background="#F0F4FA" RequestedThemeVariant="Light">
+  <Window.Styles>
+    <Style Selector="Button.nav">
+      <Setter Property="Background" Value="Transparent"/>
+      <Setter Property="Foreground" Value="#304561"/>
+      <Setter Property="Padding" Value="12,9"/>
+      <Setter Property="CornerRadius" Value="8"/>
+    </Style>
+    <Style Selector="Button.nav.current">
+      <Setter Property="Background" Value="#DFEAFE"/>
+      <Setter Property="Foreground" Value="#173F89"/>
+      <Setter Property="FontWeight" Value="SemiBold"/>
+    </Style>
+    <Style Selector="ListBoxItem">
+      <Setter Property="CornerRadius" Value="9"/>
+      <Setter Property="Margin" Value="0,0,0,6"/>
+    </Style>
+  </Window.Styles>
+  <Grid RowDefinitions="Auto,*,Auto" ColumnDefinitions="210,*">
+    <Border Grid.ColumnSpan="2" Background="#101F36" Padding="24,17">
+      <Grid ColumnDefinitions="*,Auto">
+        <StackPanel Spacing="4">
+          <TextBlock Text="Компьютерный клуб" Foreground="White" FontSize="26" FontWeight="Bold"/>
+          <TextBlock Text="Каталог и управление сеансами" Foreground="#B8C8DF"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="8" VerticalAlignment="Center">
+          <TextBlock x:Name="RoleLabel" Foreground="White" VerticalAlignment="Center"/>
+          <TextBox x:Name="LoginBox" Watermark="Логин" Width="118" Background="White" Foreground="#101F36"/>
+          <TextBox x:Name="PasswordBox" Watermark="Пароль" PasswordChar="●" Width="118" Background="White" Foreground="#101F36"/>
+          <Button x:Name="SignIn" Content="Войти" Background="#2454A3" Foreground="White" CornerRadius="8"/>
+          <Button x:Name="SignOut" Content="Выйти" IsVisible="False" Background="#294365" Foreground="White" CornerRadius="8"/>
+        </StackPanel>
+      </Grid>
+    </Border>
+    <Border Grid.Row="1" Background="White" Padding="14,20" BorderBrush="#DAE3F0" BorderThickness="0,0,1,0">
+      <StackPanel Spacing="12">
+        <TextBlock Text="РАЗДЕЛЫ" Foreground="#4E6280" FontSize="11" FontWeight="Bold" Margin="10,0,0,0"/>
+        <StackPanel x:Name="Nav" Spacing="5"/>
+      </StackPanel>
+    </Border>
+    <Grid Grid.Row="1" Grid.Column="1" Margin="24" RowDefinitions="Auto,Auto,*,Auto">
+      <Grid ColumnDefinitions="*,Auto" Margin="0,0,0,14">
+        <TextBlock x:Name="PageTitle" Text="Компьютеры" FontSize="26" FontWeight="Bold" Foreground="#101F36"/>
+        <Border Grid.Column="1" Background="#E0EAFB" CornerRadius="12" Padding="10,5" VerticalAlignment="Center">
+          <TextBlock x:Name="RowCount" Text="Записей: 0" Foreground="#244677" FontSize="12"/>
+        </Border>
+      </Grid>
+      <WrapPanel Grid.Row="1" Margin="0,0,0,12">
+        <TextBox x:Name="SearchBox" Width="240" Watermark="Поиск" Margin="0,0,10,4"/>
+        <ComboBox x:Name="SortBox" Width="185" Margin="0,0,10,4"/>
+        <CheckBox x:Name="FreeOnly" Content="Только свободные"/>
+      </WrapPanel>
+      <Border Grid.Row="2" Background="White" CornerRadius="12" BorderBrush="#DAE3F0" BorderThickness="1" Padding="8">
+        <Grid>
+          <ListBox x:Name="Rows" Background="Transparent" Padding="4"/>
+          <TextBlock x:Name="EmptyState" Text="Список пуст" Foreground="#4E6280" HorizontalAlignment="Center" VerticalAlignment="Center" IsHitTestVisible="False"/>
+        </Grid>
+      </Border>
+      <WrapPanel x:Name="Actions" Grid.Row="3" Margin="0,14,0,0"/>
+    </Grid>
+    <Border Grid.Row="2" Grid.ColumnSpan="2" Background="#E5EDF8" Padding="18,10">
+      <TextBlock x:Name="StatusLine" TextWrapping="Wrap"/>
+    </Border>
+  </Grid>
+</Window>
+
+
