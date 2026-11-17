@@ -1,6 +1,6 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        x:Class="Club.MainWindow" Title="Компьютерный клуб"
+        x:Class="Club.Views.MainWindow" Title="Компьютерный клуб"
         Width="1100" Height="760" MinWidth="870" MinHeight="560"
         Background="#F0F4FA" RequestedThemeVariant="Light">
   <Window.Styles>

@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net">
+  <diagram id="cost-flow" name="Рисунок 4">
+    <mxGraphModel grid="1" gridSize="10" page="1" pageScale="1" pageWidth="610" pageHeight="735">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="start" value="Начало" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Times New Roman;fontSize=15;fillColor=#ffffff;strokeColor=#000000;rounded=1;arcSize=100;">
+          <mxGeometry as="geometry" x="147" y="24" width="116" height="42" />
+        </mxCell>
+        <mxCell id="data" value="Начало и конец сеанса,&#10;цена часа" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Times New Roman;fontSize=15;fillColor=#ffffff;strokeColor=#000000;shape=parallelogram;perimeter=parallelogramPerimeter;">
+          <mxGeometry as="geometry" x="104" y="100" width="202" height="50" />
+        </mxCell>
+        <mxCell id="done" value="Сеанс&#10;завершён?" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Times New Roman;fontSize=15;fillColor=#ffffff;strokeColor=#000000;rhombus;">
+          <mxGeometry as="geometry" x="105" y="179" width="200" height="79" />
+        </mxCell>
+        <mxCell id="minutes" value="Округлить длительность&#10;вверх до m полных минут" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Times New Roman;fontSize=15;fillColor=#ffffff;strokeColor=#000000;">
+          <mxGeometry as="geometry" x="86" y="294" width="238" height="49" />
+        </mxCell>
+        <mxCell id="wait" value="Ожидать завершения" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Times New Roman;fontSize=15;fillColor=#ffffff;strokeColor=#000000;">
+          <mxGeometry as="geometry" x="345" y="294" width="172" height="49" />
+        </mxCell>
+        <mxCell id="calc" value="C = ROUND(m × P / 60, 2)" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Times New Roman;fontSize=15;fillColor=#ffffff;strokeColor=#000000;">
+          <mxGeometry as="geometry" x="70" y="372" width="270" height="59" />
+        </mxCell>
+        <mxCell id="result" value="Показать сумму&#10;к оплате" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Times New Roman;fontSize=15;fillColor=#ffffff;strokeColor=#000000;shape=parallelogram;perimeter=parallelogramPerimeter;">
+          <mxGeometry as="geometry" x="104" y="465" width="202" height="50" />
+        </mxCell>
+        <mxCell id="end" value="Конец" vertex="1" parent="1" style="whiteSpace=wrap;html=0;fontFamily=Times New Roman;fontSize=15;fillColor=#ffffff;strokeColor=#000000;rounded=1;arcSize=100;">
+          <mxGeometry as="geometry" x="153" y="565" width="104" height="38" />
+        </mxCell>
+        <mxCell id="e1" source="start" edge="1" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#000000;fontFamily=Times New Roman;labelBackgroundColor=#ffffff;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="data">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e2" source="data" edge="1" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#000000;fontFamily=Times New Roman;labelBackgroundColor=#ffffff;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="done">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e3" source="done" edge="1" parent="1" value="Да" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#000000;fontFamily=Times New Roman;labelBackgroundColor=#ffffff;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="minutes">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e4" source="minutes" edge="1" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#000000;fontFamily=Times New Roman;labelBackgroundColor=#ffffff;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="calc">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e5" source="calc" edge="1" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#000000;fontFamily=Times New Roman;labelBackgroundColor=#ffffff;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="result">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e6" source="result" edge="1" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#000000;fontFamily=Times New Roman;labelBackgroundColor=#ffffff;endArrow=block;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="end">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="e7" source="done" edge="1" parent="1" value="Нет" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#000000;fontFamily=Times New Roman;labelBackgroundColor=#ffffff;endArrow=block;exitX=1;exitY=0.5;entryX=0.5;entryY=0;" target="wait">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="431" y="218" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e8" source="wait" edge="1" parent="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;strokeColor=#000000;fontFamily=Times New Roman;labelBackgroundColor=#ffffff;endArrow=none;exitX=0.5;exitY=1;">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="431" y="541" />
+            </Array>
+            <mxPoint as="targetPoint" x="205" y="541" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

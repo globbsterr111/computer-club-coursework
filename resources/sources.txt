@@ -1,0 +1,43 @@
+ИСТОЧНИКИ РЕСУРСОВ КУРСОВОГО ПРОЕКТА
+Разработка информационной системы для компьютерного клуба
+Г. А. Павловский, группа 324
+
+1. Источники для сравнения аналогов (раздел 1.2 пояснительной записки)
+LANGAME. Программа для управления компьютерным клубом. — Текст : электронный. — URL: https://langame.ru/software (дата обращения: 12.11.2026).
+COLIZEUM. Официальный сайт сети компьютерных клубов и арен. — Текст : электронный. — URL: https://colizeumarena.com/ (дата обращения: 12.11.2026).
+SmartShell. Смена оператора, платежи и сеансы. — Текст : электронный. — URL: https://support.smartshell.gg/hc/ru/articles/15783177046541 (дата обращения: 12.11.2026).
+SmartShell. Часто задаваемые вопросы. — Текст : электронный. — URL: https://smartshell.gg/faq/ (дата обращения: 12.11.2026).
+
+2. Происхождение графических материалов
+Файл | Автор или источник | Ссылка или место в записке | Использование | Дата
+docs/use_case.drawio и docs/use_case.pdf | Схема создана для проекта Г. А. Павловского | Рисунок 1 | Диаграмма прецедентов в учебном комплекте | Дата создания отдельно не указана
+docs/er_diagram.pdf | Схема создана для проекта Г. А. Павловского | Рисунок А.1 | Структура базы данных в учебном комплекте | Дата создания отдельно не указана
+docs/order_algorithm.drawio и docs/order_algorithm.png | Схема создана для проекта Г. А. Павловского | Рисунок 4 | Расчёт стоимости игрового сеанса в учебном комплекте | Дата создания отдельно не указана
+docs/catalog.pdf и снимки экрана в презентации | Интерфейс приложения «Компьютерный клуб» | Рисунки 5, 6 и Г.2 | Демонстрация интерфейса на учебных данных | Дата создания снимков отдельно не указана
+Фотографии и изображения-карточки сторонних авторов в интерфейсе приложения не используются.
+
+3. Список использованных источников
+1. ГОСТ Р 2.105-2019. Общие требования к текстовым документам. — Текст : электронный. — URL: https://protect.gost.ru/gost/details/0dd3cdfa-c15a-47b3-9e3b-4a90a43005c8 (дата обращения: 12.11.2026).
+2. ГОСТ 19.701-90. Схемы алгоритмов, программ, данных и систем. — Текст : электронный. — URL: https://protect.gost.ru/gost/details/0c85e066-f89e-433d-a6d3-b7f746bd0c7c (дата обращения: 12.11.2026).
+3. Avalonia. Getting started. — Текст : электронный. — URL: https://docs.avaloniaui.net/docs/get-started (дата обращения: 09.11.2026).
+4. Microsoft. Data types (Transact-SQL). — Текст : электронный. — URL: https://learn.microsoft.com/en-us/sql/t-sql/data-types/data-types-transact-sql (дата обращения: 09.11.2026).
+5. Microsoft. Mathematical functions (Transact-SQL). — Текст : электронный. — URL: https://learn.microsoft.com/en-us/sql/t-sql/functions/mathematical-functions-transact-sql (дата обращения: 12.11.2026).
+6. Microsoft. Create filtered indexes : документация SQL Server. — Текст : электронный. — URL: https://learn.microsoft.com/en-us/sql/relational-databases/indexes/create-filtered-indexes (дата обращения: 09.11.2026).
+7. Microsoft. CREATE PROCEDURE : официальная документация. — Текст : электронный. — URL: https://learn.microsoft.com/en-us/sql/t-sql/statements/create-procedure-transact-sql (дата обращения: 12.11.2026).
+8. Microsoft. CREATE TABLE : официальная документация. — Текст : электронный. — URL: https://learn.microsoft.com/en-us/sql/t-sql/statements/create-table-transact-sql (дата обращения: 12.11.2026).
+9. Microsoft. CREATE TRIGGER : официальная документация. — Текст : электронный. — URL: https://learn.microsoft.com/en-us/sql/t-sql/statements/create-trigger-transact-sql (дата обращения: 09.11.2026).
+10. Microsoft. CryptographicOperations.FixedTimeEquals : официальная документация. — Текст : электронный. — URL: https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.cryptographicoperations.fixedtimeequals (дата обращения: 09.11.2026).
+11. Microsoft. DATEDIFF_BIG : официальная документация. — Текст : электронный. — URL: https://learn.microsoft.com/en-us/sql/t-sql/functions/datediff-big-transact-sql (дата обращения: 09.11.2026).
+12. Microsoft. .NET CLI overview. — Текст : электронный. — URL: https://learn.microsoft.com/en-us/dotnet/core/tools/ (дата обращения: 09.11.2026).
+13. Microsoft. Microsoft SQL Server Database Provider : официальная документация. — Текст : электронный. — URL: https://learn.microsoft.com/en-us/ef/core/providers/sql-server/ (дата обращения: 09.11.2026).
+14. Microsoft. Rfc2898DeriveBytes.Pbkdf2 : официальная документация. — Текст : электронный. — URL: https://learn.microsoft.com/en-us/dotnet/api/system.security.cryptography.rfc2898derivebytes.pbkdf2 (дата обращения: 09.11.2026).
+15. Microsoft. BEGIN TRANSACTION (Transact-SQL). — Текст : электронный. — URL: https://learn.microsoft.com/en-us/sql/t-sql/language-elements/begin-transaction-transact-sql (дата обращения: 12.11.2026).
+16. LANGAME. Программа для управления компьютерным клубом. — Текст : электронный. — URL: https://langame.ru/software (дата обращения: 12.11.2026).
+17. COLIZEUM. Официальный сайт сети компьютерных клубов и арен. — Текст : электронный. — URL: https://colizeumarena.com/ (дата обращения: 12.11.2026).
+18. SmartShell. Смена оператора, платежи и сеансы. — Текст : электронный. — URL: https://support.smartshell.gg/hc/ru/articles/15783177046541 (дата обращения: 12.11.2026).
+19. Object Management Group. Unified Modeling Language 2.5.1. — Текст : электронный. — URL: https://www.omg.org/spec/UML/2.5.1/ (дата обращения: 12.11.2026).
+20. Microsoft. Основы нормализации базы данных. — Текст : электронный. — URL: https://learn.microsoft.com/en-us/previous-versions/troubleshoot/microsoft-365/microsoft-365-apps/access/database-normalization-description (дата обращения: 12.11.2026).
+21. Avalonia. Работа со списком ListBox. — Текст : электронный. — URL: https://docs.avaloniaui.net/docs/how-to/listbox-how-to (дата обращения: 12.11.2026).
+22. Microsoft. Подключение к SQL Server и выполнение запросов в SSMS. — Текст : электронный. — URL: https://learn.microsoft.com/en-us/ssms/quickstarts/ssms-connect-query-sql-server (дата обращения: 12.11.2026).
+23. Microsoft. Основы сборки мусора в .NET. — Текст : электронный. — URL: https://learn.microsoft.com/en-us/dotnet/standard/garbage-collection/fundamentals (дата обращения: 12.11.2026).
+24. SmartShell. Часто задаваемые вопросы. — Текст : электронный. — URL: https://smartshell.gg/faq/ (дата обращения: 12.11.2026).

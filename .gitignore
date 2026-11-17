@@ -1,5 +1,8 @@
 **/bin/
 **/obj/
 .vs/
-connection.txt
 *.user
+*.suo
+publish/
+*.bak
+connection.txt
